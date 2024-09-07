@@ -7,7 +7,7 @@ const ProductList = ({ products }) => {
   const productsPerPage = 20;
 
   // Log the products to see if it's being received correctly
-  console.log("Products in ProductList:", products);
+  // console.log("Products in ProductList:", products);
 
   // If products is an empty object, handle it here
   if (!products || Object.keys(products).length === 0) {

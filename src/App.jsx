@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     // Update the URL to the actual endpoint of your deployed API
-    fetch("https://cdn.drcode.ai/interview-materials/products.json")
+    fetch("/api/interview-materials/products.json")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data.products);
@@ -25,7 +25,7 @@ function App() {
     return <div>Loading...</div>; // Show a loading message until products are fetched
   }
 
-  console.log("Fetched products:", products);
+  // console.log("Fetched products:", products);
 
   return (
     <Router>
