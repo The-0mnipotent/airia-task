@@ -8,7 +8,8 @@ function App() {
   const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
-    fetch("/api/interview-materials/products.json")
+    // Update the URL to the actual endpoint of your deployed API
+    fetch("https://cdn.drcode.ai/interview-materials/products.json")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data.products);
