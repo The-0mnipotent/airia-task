@@ -2,7 +2,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import HeroSection from "../components/Herosection";
+import HeroSection from "../components/HeroSection";
 
 const HomePage = ({ products }) => {
   return (
